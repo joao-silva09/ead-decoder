@@ -66,5 +66,5 @@ public class UserModel extends RepresentationModel implements Serializable {
 
     @JsonProperty(access = JsonProperty.Access.WRITE_ONLY)
     @OneToMany(mappedBy = "user", fetch = FetchType.LAZY)
-    private Set<UserCourseModel> userCourses;
+    private Set<UserCourseModel> usersCourses;
 }
